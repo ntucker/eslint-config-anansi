@@ -17,6 +17,7 @@ module.exports = {
     // changing airbnb defaults
     'global-require': 'off',
     'no-multi-assign': 'off',
+    'no-underscore-dangle': 'off',
     'guard-for-in': 'warn',
     'no-param-reassign': ['error', { props: false }],
     'no-shadow': [
@@ -32,15 +33,6 @@ module.exports = {
     'one-var': ['error', { initialized: 'never' }],
     'one-var-declaration-per-line': ['error', 'initializations'],
     'no-named-as-default': 'off', // doesn't handle relative imports properly
-    'no-underscore-dangle': [
-      'error',
-      {
-        allow: [],
-        allowAfterThis: true,
-        allowAfterSuper: true,
-        enforceInMethodNames: true,
-      },
-    ],
     'react/jsx-no-bind': [
       'error',
       {
