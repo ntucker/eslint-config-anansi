@@ -10,10 +10,10 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     allowImportExportEverywhere: true,
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     ecmaFeatures: {
       jsx: true,
-      experimentalDecorators: true,
+      legacyDecorators: true,
       experimentalObjectRestSpread: true,
     },
   },
@@ -46,6 +46,15 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': 'off',
+    // babel support
+    'no-unused-expressions': 'off',
+    'babel/no-unused-expressions': ['error', {
+      allowShortCircuit: false,
+      allowTernary: false,
+      allowTaggedTemplates: false,
+    }],
+    'object-curly-spacing': 'off',
+    'babel/object-curly-spacing': ['error', 'always'],
     // opinions
     semi: ['error', 'never'],
     // additional rules
