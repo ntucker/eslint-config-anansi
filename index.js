@@ -73,7 +73,7 @@ module.exports = {
     'import/named': 'error',
     'import/newline-after-import': ['error', { count: 2 }],
   },
-  plugins: ['flowtype', 'react', 'import'],
+  plugins: ['flowtype', 'react', 'import', 'babel'],
   settings: {
     'import/resolver': {
       node: {
